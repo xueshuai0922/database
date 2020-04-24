@@ -1,0 +1,107 @@
+[2020-03-31T09:08:23,131][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-PMENDCI] using [1] data paths, mounts [[Windows (C:)]], net usable_space [142.2gb], net total_space [233.4gb], types [NTFS]
+[2020-03-31T09:08:23,182][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-PMENDCI] heap size [990.7mb], compressed ordinary object pointers [true]
+[2020-03-31T09:08:23,261][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] node name [DESKTOP-PMENDCI], node ID [zQS1kyAySXesGDbGFKNtPA], cluster name [elasticsearch]
+[2020-03-31T09:08:23,262][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] version[7.3.2], pid[5812], build[default/zip/1c1faf1/2019-09-06T14:40:30.409026Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-03-31T09:08:23,262][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] JVM home [C:\Java\jdk1.8.0_151\jre]
+[2020-03-31T09:08:23,263][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Dio.netty.allocator.type=unpooled, -XX:MaxDirectMemorySize=536870912, -Delasticsearch, -Des.path.home=C:\Git\database\src\main\resources\elasticsearch-7.3.2, -Des.path.conf=C:\Git\database\src\main\resources\elasticsearch-7.3.2\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=false]
+[2020-03-31T09:08:28,186][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [aggs-matrix-stats]
+[2020-03-31T09:08:28,187][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [analysis-common]
+[2020-03-31T09:08:28,188][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [data-frame]
+[2020-03-31T09:08:28,188][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [flattened]
+[2020-03-31T09:08:28,188][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [ingest-common]
+[2020-03-31T09:08:28,189][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [ingest-geoip]
+[2020-03-31T09:08:28,189][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [ingest-user-agent]
+[2020-03-31T09:08:28,190][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [lang-expression]
+[2020-03-31T09:08:28,190][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [lang-mustache]
+[2020-03-31T09:08:28,191][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [lang-painless]
+[2020-03-31T09:08:28,191][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [mapper-extras]
+[2020-03-31T09:08:28,191][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [parent-join]
+[2020-03-31T09:08:28,192][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [percolator]
+[2020-03-31T09:08:28,192][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [rank-eval]
+[2020-03-31T09:08:28,193][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [reindex]
+[2020-03-31T09:08:28,193][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [repository-url]
+[2020-03-31T09:08:28,194][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [transport-netty4]
+[2020-03-31T09:08:28,194][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [vectors]
+[2020-03-31T09:08:28,195][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-ccr]
+[2020-03-31T09:08:28,195][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-core]
+[2020-03-31T09:08:28,195][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-deprecation]
+[2020-03-31T09:08:28,196][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-graph]
+[2020-03-31T09:08:28,196][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-ilm]
+[2020-03-31T09:08:28,197][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-logstash]
+[2020-03-31T09:08:28,197][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-ml]
+[2020-03-31T09:08:28,197][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-monitoring]
+[2020-03-31T09:08:28,198][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-rollup]
+[2020-03-31T09:08:28,198][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-security]
+[2020-03-31T09:08:28,199][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-sql]
+[2020-03-31T09:08:28,199][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-voting-only-node]
+[2020-03-31T09:08:28,199][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-watcher]
+[2020-03-31T09:08:28,200][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] no plugins loaded
+[2020-03-31T09:08:35,972][INFO ][o.e.x.s.a.s.FileRolesStore] [DESKTOP-PMENDCI] parsed [0] roles from file [C:\Git\database\src\main\resources\elasticsearch-7.3.2\config\roles.yml]
+[2020-03-31T09:08:37,565][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [DESKTOP-PMENDCI] [controller/2592] [Main.cc@110] controller (64 bit): Version 7.3.2 (Build 265429af874fbe) Copyright (c) 2019 Elasticsearch BV
+[2020-03-31T09:08:38,202][DEBUG][o.e.a.ActionModule       ] [DESKTOP-PMENDCI] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2020-03-31T09:08:39,049][INFO ][o.e.d.DiscoveryModule    ] [DESKTOP-PMENDCI] using discovery type [zen] and seed hosts providers [settings]
+[2020-03-31T09:08:42,117][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] initialized
+[2020-03-31T09:08:42,117][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] starting ...
+[2020-03-31T09:08:43,954][INFO ][o.e.t.TransportService   ] [DESKTOP-PMENDCI] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2020-03-31T09:08:43,996][WARN ][o.e.b.BootstrapChecks    ] [DESKTOP-PMENDCI] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2020-03-31T09:08:44,002][INFO ][o.e.c.c.Coordinator      ] [DESKTOP-PMENDCI] cluster UUID [yuGvgvyVScSXVjAm7p4rWA]
+[2020-03-31T09:08:44,290][INFO ][o.e.c.c.ClusterBootstrapService] [DESKTOP-PMENDCI] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2020-03-31T09:08:44,711][INFO ][o.e.c.s.MasterService    ] [DESKTOP-PMENDCI] elected-as-master ([1] nodes joined)[{DESKTOP-PMENDCI}{zQS1kyAySXesGDbGFKNtPA}{ruv6fa5pR_ioHGOW2B_MGg}{127.0.0.1}{127.0.0.1:9300}{dim}{ml.machine_memory=17027506176, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 2, version: 37, reason: master node changed {previous [], current [{DESKTOP-PMENDCI}{zQS1kyAySXesGDbGFKNtPA}{ruv6fa5pR_ioHGOW2B_MGg}{127.0.0.1}{127.0.0.1:9300}{dim}{ml.machine_memory=17027506176, xpack.installed=true, ml.max_open_jobs=20}]}
+[2020-03-31T09:08:44,831][INFO ][o.e.c.s.ClusterApplierService] [DESKTOP-PMENDCI] master node changed {previous [], current [{DESKTOP-PMENDCI}{zQS1kyAySXesGDbGFKNtPA}{ruv6fa5pR_ioHGOW2B_MGg}{127.0.0.1}{127.0.0.1:9300}{dim}{ml.machine_memory=17027506176, xpack.installed=true, ml.max_open_jobs=20}]}, term: 2, version: 37, reason: Publication{term=2, version=37}
+[2020-03-31T09:08:45,374][INFO ][o.e.l.LicenseService     ] [DESKTOP-PMENDCI] license [bc98cd5f-a6f4-4a5c-b7a9-221be09d9b62] mode [basic] - valid
+[2020-03-31T09:08:45,376][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [DESKTOP-PMENDCI] Active license is now [BASIC]; Security is disabled
+[2020-03-31T09:08:45,390][INFO ][o.e.g.GatewayService     ] [DESKTOP-PMENDCI] recovered [2] indices into cluster_state
+[2020-03-31T09:08:45,662][INFO ][o.e.h.AbstractHttpServerTransport] [DESKTOP-PMENDCI] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2020-03-31T09:08:45,674][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] started
+[2020-03-31T09:08:46,141][INFO ][o.e.c.r.a.AllocationService] [DESKTOP-PMENDCI] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[dbclobdemo][0], [demo][0]] ...]).
+[2020-03-31T09:11:14,436][ERROR][o.e.b.Bootstrap          ] [DESKTOP-PMENDCI] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Git\database\src\main\resources\elasticsearch-7.3.2\data]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:299) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) [elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) [elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) [elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-7.3.2.jar:7.3.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) [elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-7.3.2.jar:7.3.2]
+[2020-03-31T09:11:14,447][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [DESKTOP-PMENDCI] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Git\database\src\main\resources\elasticsearch-7.3.2\data]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.2.jar:7.3.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.2.jar:7.3.2]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Git\database\src\main\resources\elasticsearch-7.3.2\data]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:299) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.2.jar:7.3.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.2.jar:7.3.2]
+	... 6 more
+[2020-03-31T09:12:50,391][WARN ][o.e.h.AbstractHttpServerTransport] [DESKTOP-PMENDCI] caught exception while handling client http traffic, closing connection Netty4HttpChannel{localAddress=/127.0.0.1:9200, remoteAddress=/127.0.0.1:59950}
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:?]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:?]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:?]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:?]
+	at io.netty.buffer.UnpooledHeapByteBuf.setBytes(UnpooledHeapByteBuf.java:291) ~[netty-buffer-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125) ~[netty-buffer-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-transport-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-transport-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682) [netty-transport-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:582) [netty-transport-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:536) [netty-transport-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) [netty-transport-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906) [netty-common-4.1.36.Final.jar:4.1.36.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.36.Final.jar:4.1.36.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]

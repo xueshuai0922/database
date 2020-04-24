@@ -1,0 +1,189 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          name="viewport"/>
+    <meta charset="UTF-8">
+    <title>数据库信息导出</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../static/assetss/images/favicon.ico"
+          th:href="@{/assetss/images/favicon.ico}">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../../static/element-ui/element-ui.css"
+          th:href="@{/element-ui/element-ui.css}">
+    <link rel="stylesheet" href="../../static/css/index2.css"
+          th:href="@{/css/index2.css}">
+    <link rel="stylesheet" href="../../static/css/markdown.css"
+          th:href="@{/css/markdown.css}">
+    <script th:inline="javascript">
+        var ctx = "../../"
+    </script>
+    <style>
+        /*<!--为了不出现Vue的样式源码闪烁-->*/
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+    <!-- 引入组件库 -->
+    <script src="../../static/vue/vue.v2.6.10.js"
+            th:src="@{/vue/vue.v2.6.10.js}"></script>
+    <script src="../../static/vue/axios.v0.19.0.min.js"
+            th:src="@{/vue/axios.v0.19.0.min.js}"></script>
+    <script src="../../static/element-ui/element-ui.js"
+            th:src="@{/element-ui/element-ui.js}"></script>
+    <script src="../../static/js/marked.js"
+            th:src="@{/js/marked.js}"></script>
+    <script src="../../static/js/jquery-3.3.1.js"
+            th:src="@{/js/jquery-3.3.1.js}"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <div class="header">
+        <div class="icon-img">
+            <img v-bind:src="iconUrl">
+        </div>
+        <div class="icon-text">
+            <h1 class="icon-title">{{iconTitle}}</h1>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body_content" v-loading="loading"
+             element-loading-text="龟速生成中...请勿刷新网页,如果有几千张表,等二三分钟很正常，哈哈"
+             element-loading-background="rgba(242,246,252, 0.8)">
+
+            <div v-bind:style="contentStyle">
+                <el-image src="oracle-bg.png" v-bind:src="imageUrl"
+                          :fit="fit" style="width: 190px;height:110px;"></el-image>
+                <el-form label-width="250px" :rules="rules" ref="form"
+                         style="width: 90%;padding-left: 10%;padding-top: 0px">
+                    <el-row>
+                        <el-col :span="10">
+                            <el-form-item label="数据库类型:" label-width="100px"
+                                         prop="dataType">
+                                <el-select v-model="form.dataType" style="width: 250px"
+                                           placeholder="请选择数据库类型"
+                                           @change="changeDataType">
+                                    <el-option v-for="item in dataList" :key="item.value"
+                                               :label="item.label"
+                                               :value="item.value"></el-option>
+                                </el-select>
+
+                            </el-form-item>
+                        </el-col>
+                        <el-col :span="10">
+                            <el-form-item label="数据库名:" label-width="100px"
+                                          prop="dataName">
+                                <el-input v-model="form.dataName"
+                                          placeholder="orcl" clearable></el-input>
+                            </el-form-item>
+                        </el-col>
+
+                    </el-row>
+                    <el-row>
+                        <el-col :span="10">
+                            <!--todo 端口号验证为数字-->
+                            <el-form-item label="IP:" label-width="100px"
+                                          prop="ip">
+                                <el-input v-model="form.ip"
+                                          placeholder="127.0.0.1" clearable></el-input>
+                            </el-form-item>
+                        </el-col>
+                        <el-col :span="10">
+                            <!--todo 端口号验证为数字-->
+                            <el-form-item label="端口:" label-width="100px"
+                                          prop="port">
+                                <el-input v-model="form.port"
+                                          placeholder="1521"
+                                          clearable
+                                ></el-input>
+                            </el-form-item>
+                        </el-col>
+
+                    </el-row>
+                    <el-row>
+                        <el-col :span="10">
+                            <el-form-item label="用户名:" label-width="100px"
+                                          prop="userName">
+                                <el-input v-model="form.userName"
+                                          placeholder="system" clearable></el-input>
+                                              </el-form-item>
+                        </el-col>
+                        <el-col :span="10">
+                            <el-form-item label="密码:" label-width="100px"
+                                          prop="password">
+                                <el-input v-model="form.password" show-password
+                                          placeholder="123456"> </el-input>
+                            </el-form-item>
+                        </el-col>
+                    </el-row>
+
+
+                    <el-row>
+                        <el-col :span="10">
+                            <el-form-item label="数据库编码:" label-width="100px" prop="dataEncode">
+                                <!--<el-input v-model="dataEncode"></el-input>-->
+                                <el-select v-model="form.encode" style="width: 250px" >
+                                    <el-option  v-for="item in encodeList" :key="item.value"
+                                               :label="item.label"
+                                               :value="item.value"
+                                    ></el-option>
+                                </el-select>
+                            </el-form-item>
+                        </el-col>
+                        <el-col :span="10">
+                            <el-form-item label="表名:" label-width="100px">
+                                <el-input
+                                        v-model="form.tableName"
+                                        placeholder="模糊匹配(不区分大小写)"
+                                        clearable
+                                ></el-input>
+                            </el-form-item>
+                        </el-col>
+                    </el-row>
+                    <el-row>
+
+                    </el-row>
+
+
+                    <el-row style="margin-left: 8%">
+                        <el-col :span="10">
+                            <el-button type="primary" plain
+                                       @click="testConnection()">测试连接
+                            </el-button>
+                        </el-col>
+                        <el-col :span="10">
+                            <el-button type="primary" plain @click="generateWord()">生成文档
+                            </el-button>
+                        </el-col>
+                    </el-row>
+                </el-form>
+            </div>
+        </div>
+        <div class="header">
+            <div class="icon-img">
+                <img v-bind:src="iconUrl">
+            </div>
+            <div class="icon-text">
+                <h1 class="icon-title">{{iconTitle}}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div>
+            <a onclick="">{{name}}</a>
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=827681776&site=qq&menu=yes">
+                {{qq}}</a>
+            <!--<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=827681776&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:827681776:41" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>-->
+        </div>
+    </div>
+</div>
+<script src="../../static/js/index2.js" th:src="@{/js/index2.js}"></script>
+</body>
+
+</html>

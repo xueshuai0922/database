@@ -1,0 +1,65 @@
+[2020-03-26T23:54:12,345][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-PMENDCI] using [1] data paths, mounts [[Windows (C:)]], net usable_space [145.1gb], net total_space [233.4gb], types [NTFS]
+[2020-03-26T23:54:12,348][INFO ][o.e.e.NodeEnvironment    ] [DESKTOP-PMENDCI] heap size [990.7mb], compressed ordinary object pointers [true]
+[2020-03-26T23:54:12,354][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] node name [DESKTOP-PMENDCI], node ID [zQS1kyAySXesGDbGFKNtPA], cluster name [elasticsearch]
+[2020-03-26T23:54:12,355][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] version[7.3.2], pid[26108], build[default/zip/1c1faf1/2019-09-06T14:40:30.409026Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_151/25.151-b12]
+[2020-03-26T23:54:12,356][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] JVM home [C:\Java\jdk1.8.0_151\jre]
+[2020-03-26T23:54:12,357][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\elasticsearch, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Dio.netty.allocator.type=unpooled, -XX:MaxDirectMemorySize=536870912, -Delasticsearch, -Des.path.home=C:\Git\database\src\main\resources\elasticsearch-7.3.2, -Des.path.conf=C:\Git\database\src\main\resources\elasticsearch-7.3.2\config, -Des.distribution.flavor=default, -Des.distribution.type=zip, -Des.bundled_jdk=false]
+[2020-03-26T23:54:17,772][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [aggs-matrix-stats]
+[2020-03-26T23:54:17,774][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [analysis-common]
+[2020-03-26T23:54:17,775][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [data-frame]
+[2020-03-26T23:54:17,776][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [flattened]
+[2020-03-26T23:54:17,777][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [ingest-common]
+[2020-03-26T23:54:17,777][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [ingest-geoip]
+[2020-03-26T23:54:17,778][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [ingest-user-agent]
+[2020-03-26T23:54:17,779][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [lang-expression]
+[2020-03-26T23:54:17,780][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [lang-mustache]
+[2020-03-26T23:54:17,782][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [lang-painless]
+[2020-03-26T23:54:17,783][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [mapper-extras]
+[2020-03-26T23:54:17,784][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [parent-join]
+[2020-03-26T23:54:17,784][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [percolator]
+[2020-03-26T23:54:17,785][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [rank-eval]
+[2020-03-26T23:54:17,786][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [reindex]
+[2020-03-26T23:54:17,787][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [repository-url]
+[2020-03-26T23:54:17,788][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [transport-netty4]
+[2020-03-26T23:54:17,789][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [vectors]
+[2020-03-26T23:54:17,790][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-ccr]
+[2020-03-26T23:54:17,791][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-core]
+[2020-03-26T23:54:17,791][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-deprecation]
+[2020-03-26T23:54:17,792][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-graph]
+[2020-03-26T23:54:17,793][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-ilm]
+[2020-03-26T23:54:17,793][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-logstash]
+[2020-03-26T23:54:17,794][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-ml]
+[2020-03-26T23:54:17,795][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-monitoring]
+[2020-03-26T23:54:17,795][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-rollup]
+[2020-03-26T23:54:17,796][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-security]
+[2020-03-26T23:54:17,796][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-sql]
+[2020-03-26T23:54:17,797][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-voting-only-node]
+[2020-03-26T23:54:17,798][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] loaded module [x-pack-watcher]
+[2020-03-26T23:54:17,799][INFO ][o.e.p.PluginsService     ] [DESKTOP-PMENDCI] no plugins loaded
+[2020-03-26T23:54:25,706][INFO ][o.e.x.s.a.s.FileRolesStore] [DESKTOP-PMENDCI] parsed [0] roles from file [C:\Git\database\src\main\resources\elasticsearch-7.3.2\config\roles.yml]
+[2020-03-26T23:54:26,748][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [DESKTOP-PMENDCI] [controller/23880] [Main.cc@110] controller (64 bit): Version 7.3.2 (Build 265429af874fbe) Copyright (c) 2019 Elasticsearch BV
+[2020-03-26T23:54:27,396][DEBUG][o.e.a.ActionModule       ] [DESKTOP-PMENDCI] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2020-03-26T23:54:27,804][INFO ][o.e.d.DiscoveryModule    ] [DESKTOP-PMENDCI] using discovery type [zen] and seed hosts providers [settings]
+[2020-03-26T23:54:29,299][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] initialized
+[2020-03-26T23:54:29,300][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] starting ...
+[2020-03-26T23:54:30,098][INFO ][o.e.t.TransportService   ] [DESKTOP-PMENDCI] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2020-03-26T23:54:30,108][WARN ][o.e.b.BootstrapChecks    ] [DESKTOP-PMENDCI] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2020-03-26T23:54:30,130][INFO ][o.e.c.c.ClusterBootstrapService] [DESKTOP-PMENDCI] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2020-03-26T23:54:33,178][INFO ][o.e.c.c.Coordinator      ] [DESKTOP-PMENDCI] setting initial configuration to VotingConfiguration{zQS1kyAySXesGDbGFKNtPA}
+[2020-03-26T23:54:33,396][INFO ][o.e.c.s.MasterService    ] [DESKTOP-PMENDCI] elected-as-master ([1] nodes joined)[{DESKTOP-PMENDCI}{zQS1kyAySXesGDbGFKNtPA}{5OZOHrMBRK69niLExfpqZw}{127.0.0.1}{127.0.0.1:9300}{dim}{ml.machine_memory=17027506176, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, reason: master node changed {previous [], current [{DESKTOP-PMENDCI}{zQS1kyAySXesGDbGFKNtPA}{5OZOHrMBRK69niLExfpqZw}{127.0.0.1}{127.0.0.1:9300}{dim}{ml.machine_memory=17027506176, xpack.installed=true, ml.max_open_jobs=20}]}
+[2020-03-26T23:54:33,437][INFO ][o.e.c.c.CoordinationState] [DESKTOP-PMENDCI] cluster UUID set to [yuGvgvyVScSXVjAm7p4rWA]
+[2020-03-26T23:54:33,463][INFO ][o.e.c.s.ClusterApplierService] [DESKTOP-PMENDCI] master node changed {previous [], current [{DESKTOP-PMENDCI}{zQS1kyAySXesGDbGFKNtPA}{5OZOHrMBRK69niLExfpqZw}{127.0.0.1}{127.0.0.1:9300}{dim}{ml.machine_memory=17027506176, xpack.installed=true, ml.max_open_jobs=20}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2020-03-26T23:54:33,618][INFO ][o.e.g.GatewayService     ] [DESKTOP-PMENDCI] recovered [0] indices into cluster_state
+[2020-03-26T23:54:33,966][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.watch-history-10] for index patterns [.watcher-history-10*]
+[2020-03-26T23:54:34,025][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.watches] for index patterns [.watches*]
+[2020-03-26T23:54:34,071][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.triggered_watches] for index patterns [.triggered_watches*]
+[2020-03-26T23:54:34,129][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-7-*]
+[2020-03-26T23:54:34,195][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.monitoring-es] for index patterns [.monitoring-es-7-*]
+[2020-03-26T23:54:34,246][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.monitoring-beats] for index patterns [.monitoring-beats-7-*]
+[2020-03-26T23:54:34,296][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.monitoring-alerts-7] for index patterns [.monitoring-alerts-7]
+[2020-03-26T23:54:34,348][INFO ][o.e.c.m.MetaDataIndexTemplateService] [DESKTOP-PMENDCI] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-7-*]
+[2020-03-26T23:54:34,397][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [DESKTOP-PMENDCI] adding index lifecycle policy [watch-history-ilm-policy]
+[2020-03-26T23:54:34,408][INFO ][o.e.h.AbstractHttpServerTransport] [DESKTOP-PMENDCI] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2020-03-26T23:54:34,409][INFO ][o.e.n.Node               ] [DESKTOP-PMENDCI] started
+[2020-03-26T23:54:34,569][INFO ][o.e.l.LicenseService     ] [DESKTOP-PMENDCI] license [bc98cd5f-a6f4-4a5c-b7a9-221be09d9b62] mode [basic] - valid
+[2020-03-26T23:54:34,571][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [DESKTOP-PMENDCI] Active license is now [BASIC]; Security is disabled

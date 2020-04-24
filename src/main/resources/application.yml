@@ -1,0 +1,58 @@
+spring:
+  datasource:
+#   gbk测试
+#    url: jdbc:oracle:thin:@39.105.80.174:1521:hrp
+#    username: hrp_1001
+#    password: 123456
+#    driver-class-name:  oracle.jdbc.driver.OracleDriver
+
+    #ASCII 测试
+    url: jdbc:oracle:thin:@101.39.225.38:3390:develop
+    username: hrpdev
+    password: hrpdev_2019
+    driver-class-name:  oracle.jdbc.driver.OracleDriver
+
+    #UTF-8 测试
+#    url: jdbc:mysql://118.190.141.119:3306/jdbc
+#    username: root
+#    password: 123456
+#    driver-class-name:  com.mysql.cj.jdbc.Driver
+
+    druid:
+      initial-size: 5
+      max-active: 100
+      filter:
+        config:
+          enabled: false
+      stat-view-servlet:
+        login-username: druid
+        login-password: druid
+      web-stat-filter:
+        url-pattern: /*
+        exclusions: druid/*
+  elasticsearch:
+    rest:
+      uris:  http://localhost:9200 #默认值
+  thymeleaf:
+    cache: false
+    charset: UTF-8
+    template-loader-path: classpath:/templates/
+    prefix: classpath:/templates/thymeleaf/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+mybatis:
+  mapper-locations: static/xml/*.xml
+  configuration:
+    call-setters-on-nulls: true #当某字段结果为空，是否也放入结果集中
+    map-underscore-to-camel-case: true #开启驼峰命名
+    cache-enabled: true
+  scripting-language-driver:
+    thymeleaf:
+      template-file:
+        encoding: utf-8
+logging:
+  level:
+    com.xs.database: debug
+server:
+  port: 8888

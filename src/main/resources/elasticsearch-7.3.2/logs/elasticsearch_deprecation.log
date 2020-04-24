@@ -1,0 +1,8 @@
+[2020-03-26T23:54:10,049][WARN ][o.e.d.b.Bootstrap        ] [DESKTOP-PMENDCI] future versions of Elasticsearch will require Java 11; your Java version from [C:\Java\jdk1.8.0_151\jre] does not meet this requirement
+[2020-03-27T00:16:16,748][WARN ][o.e.d.b.Bootstrap        ] [DESKTOP-PMENDCI] future versions of Elasticsearch will require Java 11; your Java version from [C:\Java\jdk1.8.0_151\jre] does not meet this requirement
+[2020-03-27T00:18:35,212][WARN ][o.e.d.b.Bootstrap        ] [DESKTOP-PMENDCI] future versions of Elasticsearch will require Java 11; your Java version from [C:\Java\jdk1.8.0_151\jre] does not meet this requirement
+[2020-03-27T00:19:55,342][WARN ][o.e.d.b.Bootstrap        ] [DESKTOP-PMENDCI] future versions of Elasticsearch will require Java 11; your Java version from [C:\Java\jdk1.8.0_151\jre] does not meet this requirement
+[2020-03-27T01:22:54,010][WARN ][o.e.d.r.a.d.RestGetAction] [DESKTOP-PMENDCI] [types removal] Specifying types in document get requests is deprecated, use the /{index}/_doc/{id} endpoint instead.
+[2020-03-31T09:08:20,562][WARN ][o.e.d.b.Bootstrap        ] [DESKTOP-PMENDCI] future versions of Elasticsearch will require Java 11; your Java version from [C:\Java\jdk1.8.0_151\jre] does not meet this requirement
+[2020-03-31T09:11:13,657][WARN ][o.e.d.b.Bootstrap        ] [DESKTOP-PMENDCI] future versions of Elasticsearch will require Java 11; your Java version from [C:\Java\jdk1.8.0_151\jre] does not meet this requirement
+[2020-03-31T09:12:44,815][WARN ][o.e.d.r.a.d.RestGetAction] [DESKTOP-PMENDCI] [types removal] Specifying types in document get requests is deprecated, use the /{index}/_doc/{id} endpoint instead.

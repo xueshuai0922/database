@@ -1,0 +1,53 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#app {
+    margin: 1% 15% 5% 15%;
+}
+
+.header .icon-text {
+    display: inline-block;
+    transform: translateY(-40px);
+    padding-left: 10px;
+}
+.header{
+    text-align: center;
+}
+.foot{
+    text-align: center;
+}
+.header .icon-img {
+    display: inline-block;
+}
+
+.header .icon-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.header .icon-text .icon-notes {
+    margin-top: 10px;
+}
+
+.body {
+    border: 1px solid rgb(235, 233, 233);
+    height: 75%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.body .body_content {
+    float: left;
+    width: 100%;
+    box-sizing: border-bix;
+}
