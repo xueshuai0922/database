@@ -60,7 +60,7 @@
             <div v-bind:style="contentStyle">
                 <el-image src="oracle-bg.png" v-bind:src="imageUrl"
                           :fit="fit" style="width: 190px;height:110px;"></el-image>
-                <el-form label-width="250px" :rules="rules" ref="form"
+                <el-form label-width="250px" :rules="rules" ref="form" :model="form"
                          style="width: 90%;padding-left: 10%;padding-top: 0px">
                     <el-row>
                         <el-col :span="10">
