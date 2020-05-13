@@ -5,17 +5,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 
 /**
  * @Author 薛帅
- * @Date 2020/4/13 10:18
+ * @Date 2019/4/13 10:18
  * @Description 增加过滤器 对请求进行判断 都返回到index2上
  *             也可以请求的时候，把请求头requestMapping（/*）,但是并不想这么做，就是皮
  */

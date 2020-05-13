@@ -1,24 +1,19 @@
-package com.xs.database;
+package com;
 
-import com.xs.database.entity.DBTableEntity;
 import com.xs.database.entity.Demo;
-import com.xs.database.mapper.DataBaseTableMapper;
 import org.frameworkset.elasticsearch.ElasticSearchHelper;
 import org.frameworkset.elasticsearch.boot.BBossESStarter;
 import org.frameworkset.elasticsearch.client.ClientInterface;
 import org.frameworkset.tran.DataStream;
 import org.frameworkset.tran.db.input.es.DB2ESImportBuilder;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.ClassUtils;
 
 import java.io.*;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 @SpringBootTest

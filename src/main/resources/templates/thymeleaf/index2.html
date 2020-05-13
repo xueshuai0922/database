@@ -126,8 +126,8 @@
 
                     <el-row>
                         <el-col :span="10">
-                            <el-form-item label="数据库编码:" label-width="100px" prop="dataEncode">
-                                <!--<el-input v-model="dataEncode"></el-input>-->
+                            <el-form-item label="数据库编码:" label-width="100px"
+                                          prop="encode">
                                 <el-select v-model="form.encode" style="width: 250px" >
                                     <el-option  v-for="item in encodeList" :key="item.value"
                                                :label="item.label"

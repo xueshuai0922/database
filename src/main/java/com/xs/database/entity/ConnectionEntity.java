@@ -2,7 +2,7 @@ package com.xs.database.entity;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/25 21:31
+ * @Date 2019/3/25 21:31
  * @Description
  */
 public class ConnectionEntity {

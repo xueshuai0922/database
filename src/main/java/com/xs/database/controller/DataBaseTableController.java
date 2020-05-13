@@ -4,25 +4,19 @@ import com.xs.database.config.CommonResult;
 import com.xs.database.config.CustomException;
 import com.xs.database.entity.ConnectionEntity;
 import com.xs.database.serivce.IDataBaseTableService;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.apache.ibatis.session.defaults.DefaultSqlSessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/25 20:23
+ * @Date 2019/3/25 20:23
  * @Description
  */
 @Controller

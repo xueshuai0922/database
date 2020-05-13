@@ -1,13 +1,12 @@
 package com.xs.database.serivce;
 
 import com.xs.database.entity.ConnectionEntity;
-import com.xs.database.entity.DBTableEntity;
 
 import java.util.List;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/29 14:10
+ * @Date 2019/3/29 14:10
  * @Description
  */
 

@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/26 21:30
+ * @Date 2019/3/26 21:30
  * @Description
  */
 public class ResultHandlerImp implements ResultHandler<DBTableEntity> {

@@ -2,11 +2,10 @@ package com.xs.database.entity;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/25 20:24
+ * @Date 2019/3/25 20:24
  * @Description
  */
 

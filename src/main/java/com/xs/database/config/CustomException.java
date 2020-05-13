@@ -2,7 +2,7 @@ package com.xs.database.config;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/29 15:09
+ * @Date 2019/3/29 15:09
  * @Description 自定义异常类
  */
 public class CustomException extends  RuntimeException{

@@ -11,7 +11,7 @@ import java.sql.*;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/28 16:30
+ * @Date 2019/3/28 16:30
  * @Description 数据库连接类 懒汉线程 安全 单例  /饿汉就是类加载的时候就创建实例
  */
 public class ConnectionUtil {

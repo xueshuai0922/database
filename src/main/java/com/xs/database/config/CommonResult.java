@@ -2,7 +2,7 @@ package com.xs.database.config;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/29 15:11
+ * @Date 2019/3/29 15:11
  * @Description 返回结果封装类
  */
 public class CommonResult<T> {

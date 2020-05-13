@@ -2,7 +2,7 @@ package com.xs.database.config;
 
 /**
  * @Author 薛帅
- * @Date 2020/4/3 16:14
+ * @Date 2019/4/3 16:14
  * @Description 结果返回代码枚举类
  */
 public enum ResultCode implements  IErrorCode{

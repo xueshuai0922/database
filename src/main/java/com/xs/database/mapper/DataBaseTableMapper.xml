@@ -4,12 +4,10 @@
 <mapper namespace="com.xs.database.mapper.DataBaseTableMapper">
     <!--加上二级缓存，虽然大材小用 哈哈，一级缓存就可以，因为我就写了这一个mapper的，
     二级缓存使用在namespace区域-->
-    <!--<cache/>-->
+    <cache/>
+    <!--oracle中long字段处理-->
     <resultMap id="dbMapOracle" type="com.xs.database.entity.DBTableEntity"
-               >
-        <id column="tableName" property="tableName" jdbcType="VARCHAR"></id>
-        <result column="tableNameCn" property="tableNameCn" jdbcType="VARCHAR"
-                typeHandler="com.xs.database.handler.BatisEncodeHandler"></result>
+               extends="tableMap">
         <collection property="columnEntity" resultMap="colMapOracle">
         </collection>
     </resultMap>
@@ -21,16 +19,13 @@
         <result column="dataType" property="dataType" jdbcType="VARCHAR"></result>
         <result column="nullAble" property="nullAble" jdbcType="VARCHAR"></result>
         <result column="dataLength" property="dataLength" jdbcType="INTEGER"></result>
-        <!--oracle中long字段处理-->
         <result column="defaultData" property="defaultData"
                 jdbcType="LONGVARBINARY"></result>
     </resultMap>
 
 
-    <resultMap id="dbMap" type="com.xs.database.entity.DBTableEntity">
-        <id column="tableName" property="tableName" jdbcType="VARCHAR"></id>
-        <result column="tableNameCn" property="tableNameCn" jdbcType="VARCHAR"
-                typeHandler="com.xs.database.handler.BatisEncodeHandler"></result>
+    <resultMap id="dbMap" type="com.xs.database.entity.DBTableEntity"
+               extends="tableMap">
         <collection property="columnEntity" resultMap="colMap">
         </collection>
     </resultMap>
@@ -43,6 +38,12 @@
         <result column="nullAble" property="nullAble" jdbcType="VARCHAR"></result>
         <result column="dataLength" property="dataLength" jdbcType="INTEGER"></result>
         <result column="defaultData" property="defaultData" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <resultMap id="tableMap" type="com.xs.database.entity.DBTableEntity">
+        <id column="tableName" property="tableName" jdbcType="VARCHAR"></id>
+        <result column="tableNameCn" property="tableNameCn" jdbcType="VARCHAR"
+                typeHandler="com.xs.database.handler.BatisEncodeHandler"></result>
     </resultMap>
 
 
@@ -99,7 +100,7 @@
         c.ordinal_position
     </select>
 
-    <select id="testCon" resultType="int" useCache="false" flushCache="true">
+    <select id="testCon" resultType="int">
         select 1 from dual
     </select>
 </mapper>

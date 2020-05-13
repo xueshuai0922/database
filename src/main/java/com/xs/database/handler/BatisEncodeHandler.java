@@ -2,6 +2,9 @@ package com.xs.database.handler;
 
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.TypeHandler;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;
@@ -12,13 +15,13 @@ import java.sql.SQLException;
 
 /**
  * @Author 薛帅
- * @Date 2020/4/22 15:18
+ * @Date 2019/4/22 15:18
  * @Description  中文乱码处理handler，实现mybatis的typeHandler接口
  *  数据库编码：
  *      解数据库编码                      重新编码
  *      ISO-8559-1                        GBK
- *      GBK/GB2312
- *      unicode UTF-8/UTF-16
+ *      GBK/GB2312                        GBK
+ *      unicode UTF-8/UTF-16              不变
  *
  */
 @Component
@@ -38,6 +41,7 @@ public class BatisEncodeHandler implements TypeHandler<String> {
     }
 
     public BatisEncodeHandler() {
+        System.out.println("创建"+this+" bean============");
     }
 
     @Override
@@ -46,7 +50,7 @@ public class BatisEncodeHandler implements TypeHandler<String> {
     }
 
     /**
-     * 进行重新编码
+     * 进行重新编码，解决中文乱码问题
      * @param rs
      * @param columnName
      * @return
@@ -56,7 +60,7 @@ public class BatisEncodeHandler implements TypeHandler<String> {
     public String getResult(ResultSet rs, String columnName) throws SQLException {
         String string = rs.getString(columnName);
         try {
-            if(string!=null && code != null){
+            if(string!=null && this.code != null){
                 if("UTF-8".equals(this.code)){
                     return  string;
                 }else{
@@ -81,4 +85,6 @@ public class BatisEncodeHandler implements TypeHandler<String> {
     public String getResult(CallableStatement cs, int columnIndex) throws SQLException {
         return null;
     }
+
+
 }

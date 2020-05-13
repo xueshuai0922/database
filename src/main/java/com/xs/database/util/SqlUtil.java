@@ -4,7 +4,7 @@ import org.springframework.util.StringUtils;
 
 /**
  * @Author 薛帅
- * @Date 2020/3/29 13:14
+ * @Date 2019/3/29 13:14
  * @Description 根据数据库类型不同，查询不同表sql
  */
 public class SqlUtil {

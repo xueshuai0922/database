@@ -7,16 +7,16 @@ spring:
 #    driver-class-name:  oracle.jdbc.driver.OracleDriver
 
     #ASCII 测试
-    url: jdbc:oracle:thin:@101.39.225.38:3390:develop
-    username: hrpdev
-    password: hrpdev_2019
-    driver-class-name:  oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@101.39.225.38:3390:develop
+#    username: hrpdev
+#    password: hrpdev_201
+#    driver-class-name:  oracle.jdbc.driver.OracleDriver
 
     #UTF-8 测试
-#    url: jdbc:mysql://118.190.141.119:3306/jdbc
-#    username: root
-#    password: 123456
-#    driver-class-name:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://118.190.141.119:3306/jdbc
+    username: root
+    password: 123456
+    driver-class-name:  com.mysql.cj.jdbc.Driver
 
     druid:
       initial-size: 5
@@ -41,16 +41,17 @@ spring:
     suffix: .html
     mode: HTML5
     encoding: UTF-8
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+
 mybatis:
   mapper-locations: static/xml/*.xml
   configuration:
     call-setters-on-nulls: true #当某字段结果为空，是否也放入结果集中
     map-underscore-to-camel-case: true #开启驼峰命名
-    cache-enabled: true
-  scripting-language-driver:
-    thymeleaf:
-      template-file:
-        encoding: utf-8
+    cache-enabled: false
+    local-cache-scope: statement
+  type-handlers-package:
 logging:
   level:
     com.xs.database: debug
